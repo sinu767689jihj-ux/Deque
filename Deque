@@ -1,0 +1,34 @@
+import java.util.LinkedList;
+import java.util.Deque;
+public class DequeDemo {
+    public static void main(String[] args)
+    {
+        Deque<Integer> dq=new LinkedList<>();
+        dq.add(10);
+        dq.add(53);
+        dq.addFirst(53);
+        dq.offerFirst(7);
+        dq.add(90);
+        dq.add(23);
+        dq.add(62);
+        dq.addFirst(0);
+        System.out.println(dq);
+        System.out.println(dq.peekFirst());
+        System.out.println(dq.peek());
+        System.out.println(dq.peekLast());
+        System.out.println(dq);
+        System.out.println(dq.pollFirst());
+        System.out.println(dq.poll());
+        System.out.println(dq.pollLast());
+        System.out.println(dq);
+        System.out.println(dq.getFirst());
+        System.out.println(dq.getLast());
+        System.out.println(dq.remove());
+        System.out.println(dq.removeFirst());
+        System.out.println(dq.removeLast());
+        dq.offer(3);
+        dq.offerFirst(73);
+        dq.offerLast(52);
+        System.out.println(dq);
+    }
+}
