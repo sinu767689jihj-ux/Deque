@@ -1,0 +1,15 @@
+import java.util.*;
+class DequeDemo1{
+    public static void main(String[] args){
+        Deque<Integer> d=new LinkedList<>();
+        d.addFirst(10);
+        d.addFirst(3);
+        d.addFirst(6);
+        d.addLast(1);
+        System.out.println(d);
+        System.out.println(d.peekFirst());
+        System.out.println(d.peekLast());
+        System.out.println(d.pollFirst());
+        System.out.println(d.pollFirst());
+    }
+}
