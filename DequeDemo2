@@ -1,0 +1,26 @@
+import java.util.*;
+class DequeDemo2{
+    public static void main(String[] args){
+        Student s1=new Student("Srinuvasulu",05,891);
+        Student s2=new Student("Raja",9,380);
+        Student s3=new Student("Mahendra",7,982);
+        Deque<Student> d=new LinkedList<>();
+        d.addFirst(s1);
+        d.addFirst(s2);
+        d.addLast(s3);
+        Student s=d.pollFirst();
+        Student peek=d.peekLast();
+        System.out.println(s.name+" "+s.rollNo+" "+s.marks);
+        System.out.println(peek.name+" "+peek.rollNo+" "+peek.marks);
+    }
+}
+class Student{
+    String name;
+    int rollNo;
+    int marks;
+    Student(String name,int rollNo,int marks){
+        this.name=name;
+        this.rollNo=rollNo;
+        this.marks=marks;
+    }
+}
